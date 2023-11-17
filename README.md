@@ -7,23 +7,22 @@ This is a small package for displaying code with syntax highlighting in a custom
 # Example
 
 ```python
-from CTkCodeView import CTkCodeViewer
-from customtkinter import *
-
-root = CTk()
-root.geometry("1000x1000")
-root.title("CTkCodeView")
-
-with open("CTkCodeView.py", "r") as f:
-    code = f.read()
-
 codeviewer = CTkCodeViewer(root, code=code, language="python", theme="monokai")
-codeviewer.pack(expand=True, fill="both", padx=20, pady=20)
-
-root.mainloop()
 ```
+
+# Arguments
+| Argument | Value |
+|---------|-------|
+| root | root, tkinter.Frame or CTkFrame |
+| width | textbox width in px |
+| height | textbox height in px |
+| code | code to display |
+| allow_selecting | allow users to select or not (True or False)|
+| language | the language given (default = "python"). This supports all the languages available in pygments|
+| theme | theme of the syntax highlighting (default = "monokai"). This supports all the themes available in pygments|
 
 # Methods
 - .allstyles()
+  
   returns all the available themes
 
