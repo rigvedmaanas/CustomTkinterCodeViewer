@@ -1,4 +1,10 @@
 # CustomTkinter CodeViewer
+
+## Install via pypi
+```zsh
+pip install CustomtkinterCodeViewer
+```
+
 This is a package for displaying code with syntax highlighting in a customtkinter application
 
 ![CTkCodeViewer](https://github.com/rigvedmaanas/CustomTkinterCodeViewer/assets/77579661/725c765f-b01e-4da4-b0ba-e0f6a441854d)
